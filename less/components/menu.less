@@ -1,0 +1,41 @@
+.navigation{
+    width: 100%;
+}
+.side-nav{
+
+    li{
+        font-weight: 700;
+        font-size: 14px;
+        width: 100%;
+
+
+        a{
+            color: @menuitemcolor;
+            display:block;
+            padding: 10px 0 10px 20px;
+            width: 100%;
+            &:hover{
+                background-color: lighten(@lightgrey,20%);
+            }
+            &.active{
+                color: @linkcolorvisited;
+            }
+        }
+
+        // SUBMENU
+        ul{
+            display: none;
+
+            &.active{
+                display: block;
+            }
+            li{
+                font-weight: 400;
+
+                a{
+                    padding: 10px 0 10px 30px;
+                }
+            }
+        }
+    }
+}
