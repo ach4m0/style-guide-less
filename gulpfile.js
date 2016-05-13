@@ -6,7 +6,7 @@
 gulp = require('gulp');
 
 // Utilities
-
+concat = require('gulp-concat');
 
 // HTML
 jade = require('gulp-jade');
@@ -32,10 +32,12 @@ paths = {
     jademain:  'jade/*.jade',
     jade:      'jade/**/*.jade',
     dist:      'public/',
-    index:     '*.html',
     lessmain:  'less/*.less',
     less:      'less/**/*.less',
-    css:       'public/static/styles/'
+    css:       'public/static/styles/',
+    jssrc:     'js/*.js',
+    js:        'public/static/js/',
+    jquery:    'bower_components/jquery/dist/jquery.min.js'
 }
 
 
@@ -47,7 +49,7 @@ paths = {
 
 // Jade task
 gulp.task('jade',function(){
-    gulp.src(paths.jademain)
+    return gulp.src(paths.jademain)
         .pipe(jade({
             pretty: true
             }
@@ -55,22 +57,36 @@ gulp.task('jade',function(){
         .pipe(gulp.dest(paths.dist));
 });
 
-
 // Less task
 gulp.task('less',function(){
-    gulp.src(paths.lessmain)
+    return gulp.src(paths.lessmain)
         .pipe(less())
         .pipe(gulp.dest(paths.css))
+});
+
+// JS task
+gulp.task('scripts',function(){
+    return gulp.src(paths.jssrc)
+        .pipe(concat('styleguide.js',{newline:';'}))
+        .pipe(gulp.dest(paths.js))
 });
 
 // Watch task
 gulp.task('watch',function(){
     gulp.watch(paths.jade, ['jade']);
     gulp.watch(paths.less, ['less']);
+    gulp.watch(paths.jssrc, ['scripts']);
 });
 
+// Copy bower dependencies
+gulp.task('bowercopy',function(){
+    gulp.src(paths.jquery)
+        .pipe(gulp.dest(paths.js));
+});
+
+// Webserver with livereload
 gulp.task('webserver',function(){
-    gulp.src(paths.dist)
+    return gulp.src(paths.dist)
         .pipe(webserver({
             port: 9000,
             livereload: true
@@ -81,6 +97,8 @@ gulp.task('webserver',function(){
 gulp.task('default',[
     'jade',
     'less',
+    'scripts',
+    'bowercopy',
     'webserver',
     'watch'
 ]);
