@@ -15,10 +15,12 @@
 nav{
     .hamburger-button{
         color: @black;
+        height: 56px;
+        left: 0;
         padding: 12px;
         position: fixed;
-        left: 0;
         top: 0;
+        width: 56px;
         z-index: 3;
         @media only screen and (min-width: @bp2){
             display: none;
@@ -60,4 +62,26 @@ nav{
             }
         }
     }
+}
+.header{
+    background: @white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    left: 64px;
+    right: 64px;
+    height: 56px;
+    line-height: 56px;
+    padding: 0 0 0 56px;
+    @media only screen and (min-width: @bp2){
+        line-height: 64px;
+        height: 64px;
+    }
+
+    .header-title{
+        height: 56px;
+        font-size: 18px;
+        @media only screen and (min-width: @bp2){
+            height: 64px;
+        }
+    }
+
 }
