@@ -3,7 +3,7 @@
   <head>
     <meta id="viewport" name="viewport" content="width=device-width">
     <title>Style Guide Less</title>
-    <link href="http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic|Material+Icons" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500,500italic,700,700italic|Material+Icons" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="static/styles/styleguide.css">
   </head>
   <body>
@@ -16,20 +16,20 @@
         <nav class="navigation">
           <ul class="side-nav">
             <li><a href="/index.html" class="active">Inicio</a></li>
-            <li><a href="/styles.html">Estilos</a>
+            <li><a href="/#estilos">Estilos</a>
               <ul class="active">
-                <li><a href="/styles.html#colores">Colores</a></li>
-                <li><a href="/styles.html#typography">Tipografias</a></li>
-                <li><a href="/styles.html#icons">Iconos</a></li>
+                <li><a href="/#colores">Colores</a></li>
+                <li><a href="/#tipografias">Tipografias</a></li>
+                <li><a href="/#icons">Iconos</a></li>
               </ul>
             </li>
-            <li><a href="/components.html">Componentes</a>
+            <li><a href="/#componentes">Componentes</a>
               <ul class="active">
-                <li><a href="/components.html#buttons">Botones</a></li>
-                <li><a href="/components.html#forms">Formularios</a></li>
-                <li><a href="/components.html#forms">Tablas</a></li>
-                <li><a href="/components.html#forms">Listas</a></li>
-                <li><a href="/components.html#forms">Menus</a></li>
+                <li><a href="/#botones">Botones</a></li>
+                <li><a href="/#forms">Formularios</a></li>
+                <li><a href="/#tablas">Tablas</a></li>
+                <li><a href="/#listas">Listas</a></li>
+                <li><a href="/#menus">Menus</a></li>
               </ul>
             </li>
           </ul>
@@ -37,19 +37,85 @@
       </div>
       <div class="row header"><span class="header-title">Guía de estilos - Inicio</span></div>
       <div class="row">
-        <div class="small-col-12">
-          <h1>Colores</h1>
+        <div id="estilos" class="medium-col-12">
+          <h1>Estilos</h1>
         </div>
       </div>
       <div class="row">
-        <div class="small-col-12">
-          <h1>Tipografías</h1>
-          <h1>h1.Titulo principal</h1>
-          <h2>h2.Titulo secundario</h2>
-          <h3>h3.Tercer nivel</h3>
-          <h4>h4.Cuarto nivel</h4>
-          <h5>h5.Quinto nivel</h5>
-          <h6>h6.Sexto nivel</h6>
+        <div id="colores" class="medium-col-12">
+          <h2>Colores</h2>
+        </div>
+        <div class="medium-col-12">
+          <div class="color-box"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div id="tipografias" class="medium-col-12">
+          <h2>Tipografías</h2>
+          <p>La fuente utilizada es Roboto importada directamente de fonts.googleapis.com con los siguientes posibles estilos:</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="medium-col-4">
+          <h3 class="light-text">Roboto Light (.light-text)</h3><small><i>Weight 300, letter-spacing 0.05em</i></small>
+          <h3>Roboto Regular</h3><small><i>Weight 400</i></small>
+          <h3 class="medium-text">Roboto Medium (.medium-text)</h3><small><i>Weight 500</i></small>
+          <h3 class="bold-text">Roboto Bold (.bold-text)</h3><small><i>Weight 700</i></small>
+        </div>
+        <div class="medium-col-4">
+          <h1 class="text-right">h1.Titulo principal</h1>
+          <h2 class="text-right">h2.Titulo secundario</h2>
+          <h3 class="text-right">h3.Tercer nivel</h3>
+          <h4 class="text-right">h4.Cuarto nivel</h4>
+          <h5 class="text-right">h5.Quinto nivel</h5>
+          <h6 class="text-right">h6.Sexto nivel</h6>
+        </div>
+        <div class="medium-col-4">
+          <h1>34px</h1>
+          <h2>24px</h2>
+          <h3>20px</h3>
+          <h4>18px</h4>
+          <h5>16px</h5>
+          <h6>14px</h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="medium-col-6 clear">
+          <p>
+            <u/>Párrafo normal</u>: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          </p>
+        </div>
+        <div class="medium-col-6">
+          <p class="light-text">
+            <u/>Párrafo light</u>: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          </p>
+        </div>
+        <div class="medium-col-6">
+          <p class="medium-text">
+            <u/>Párrafo medio</u>: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          </p>
+        </div>
+        <div class="medium-col-6">
+          <p class="bold-text">
+            <u/>Párrafo bold</u>: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div id="icons" class="medium-col-12">
+          <h2>Iconos</h2>
         </div>
       </div>
     </div>
