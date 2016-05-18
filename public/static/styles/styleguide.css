@@ -54,19 +54,141 @@ hr {
   display: none;
   height: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
 }
 .clear {
   clear: both;
 }
+.bg-maincolor {
+  background: #3F51B5;
+}
+.bg-lightmaincolor {
+  background: #7280ce;
+}
+.bg-darkmaincolor {
+  background: #2b387c;
+}
+.bg-secondcolor {
+  background: #2196F3;
+}
+.bg-lightsecondcolor {
+  background: #6ab8f7;
+}
+.bg-darksecondcolor {
+  background: #0a6ebd;
+}
+.bg-thirdcolor {
+  background: #EF6C00;
+}
+.bg-lightthirdcolor {
+  background: #ff943d;
+}
+.bg-darkthirdcolor {
+  background: #a34900;
+}
+.bg-black {
+  background: #000000;
+}
+.bg-darkgrey {
+  background: #404040;
+}
+.bg-grey {
+  background: #808080;
+}
+.bg-lightgrey {
+  background: #bfbfbf;
+}
+.bg-white {
+  background: #FFFFFF;
+}
+.bg-alertcolor {
+  background: #FCF8E3;
+}
+.bg-errorcolor {
+  background: #DA4F49;
+}
+.bg-infocolor {
+  background: #D9EDF7;
+}
+.bg-inverscolor {
+  background: #414141;
+}
+.bg-successcolor {
+  background: #5BB75B;
+}
+.bg-warningcolor {
+  background: #FAA732;
+}
+.maincolor {
+  color: #3F51B5;
+}
+.lightmaincolor {
+  color: #7280ce;
+}
+.darkmaincolor {
+  color: #2b387c;
+}
+.secondcolor {
+  color: #2196F3;
+}
+.lightsecondcolor {
+  color: #6ab8f7;
+}
+.darksecondcolor {
+  color: #0a6ebd;
+}
+.thirdcolor {
+  color: #EF6C00;
+}
+.lightthirdcolor {
+  color: #ff943d;
+}
+.darkthirdcolor {
+  color: #a34900;
+}
+.black {
+  color: #000000;
+}
+.darkgrey {
+  color: #404040;
+}
+.grey {
+  color: #808080;
+}
+.lightgrey {
+  color: #bfbfbf;
+}
+.white {
+  color: #FFFFFF;
+}
+.alertcolor {
+  color: #FCF8E3;
+}
+.errorcolor {
+  color: #DA4F49;
+}
+.infocolor {
+  color: #D9EDF7;
+}
+.inverscolor {
+  color: #414141;
+}
+.successcolor {
+  color: #5BB75B;
+}
+.warningcolor {
+  color: #FAA732;
+}
 .row {
   display: inline-block;
+  padding: 0 20px;
   width: 100%;
 }
-.row div {
+.row > div {
   float: left;
   padding-left: 50px;
-  padding-top: 16px;
 }
 .row .small-col-1 {
   width: 50%;
@@ -143,40 +265,40 @@ hr {
   }
 }
 @media only screen and (min-width: 992px) {
-  .large-col-1 {
+  .row .large-col-1 {
     width: 8.33%;
   }
-  .large-col-2 {
+  .row .large-col-2 {
     width: 16.66%;
   }
-  .large-col-3 {
+  .row .large-col-3 {
     width: 25%;
   }
-  .large-col-4 {
+  .row .large-col-4 {
     width: 33.33%;
   }
-  .large-col-5 {
+  .row .large-col-5 {
     width: 41.66%;
   }
-  .large-col-6 {
+  .row .large-col-6 {
     width: 50%;
   }
-  .large-col-7 {
+  .row .large-col-7 {
     width: 58.33%;
   }
-  .large-col-8 {
+  .row .large-col-8 {
     width: 66.66%;
   }
-  .large-col-9 {
+  .row .large-col-9 {
     width: 75%;
   }
-  .large-col-10 {
+  .row .large-col-10 {
     width: 83.3%;
   }
-  .large-col-11 {
+  .row .large-col-11 {
     width: 91.6%;
   }
-  .large-col-12 {
+  .row .large-col-12 {
     width: 100%;
   }
 }

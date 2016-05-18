@@ -7,6 +7,7 @@
     $(document).on('ready',function(event){
         $('.hamburger-button').on('click',toggleSideMenu);
         $('.sidebar-alpha-layer').on('click',hideSideMenu);
+        $('.side-nav li>a').on('click',hideSideMenu);
         $(window).on('resize',function(event){
             sidebarAlphaLayer.css('display','none');
             if($(window).width() > 768){

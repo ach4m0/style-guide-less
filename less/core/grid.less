@@ -1,11 +1,10 @@
 .row{
     display: inline-block;
+    padding: 0 20px;
     width: 100%;
-
-    & div{
+    &>div{
         float: left;
         padding-left: 50px;
-        padding-top: 16px;
     }
 
     .small-col-1{
@@ -88,41 +87,43 @@
 }
 
 @media only screen and (min-width: @bp3){
-    .large-col-1{
-        width: 8.33%;
-    }
-    .large-col-2{
-        width: 16.66%;
-    }
-    .large-col-3{
-        width: 25%;
-    }
-    .large-col-4{
-        width: 33.33%;
-    }
-    .large-col-5{
-        width: 41.66%;
-    }
-    .large-col-6{
-        width: 50%;
-    }
-    .large-col-7{
-        width: 58.33%;
-    }
-    .large-col-8{
-        width: 66.66%;
-    }
-    .large-col-9{
-        width: 75%;
-    }
-    .large-col-10{
-        width: 83.3%;
-    }
-    .large-col-11{
-        width: 91.6%;
-    }
-    .large-col-12{
-        width: 100%;
+    .row{
+        .large-col-1{
+            width: 8.33%;
+        }
+        .large-col-2{
+            width: 16.66%;
+        }
+        .large-col-3{
+            width: 25%;
+        }
+        .large-col-4{
+            width: 33.33%;
+        }
+        .large-col-5{
+            width: 41.66%;
+        }
+        .large-col-6{
+            width: 50%;
+        }
+        .large-col-7{
+            width: 58.33%;
+        }
+        .large-col-8{
+            width: 66.66%;
+        }
+        .large-col-9{
+            width: 75%;
+        }
+        .large-col-10{
+            width: 83.3%;
+        }
+        .large-col-11{
+            width: 91.6%;
+        }
+        .large-col-12{
+            width: 100%;
+        }
     }
 }
 
