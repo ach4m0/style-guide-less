@@ -88,6 +88,7 @@ gulp.task('bowercopy',function(){
 gulp.task('webserver',function(){
     return gulp.src(paths.dist)
         .pipe(webserver({
+            host: '10.225.109.108',
             port: 9000,
             livereload: true
         }));

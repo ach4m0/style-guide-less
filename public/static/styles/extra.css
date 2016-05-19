@@ -15,3 +15,16 @@
   text-align: center;
   width: 170px;
 }
+.icon-box {
+  display: inline-block;
+  color: #808080;
+  text-align: center;
+  padding: 10px;
+}
+.icon-box i {
+  font-size: 30px;
+}
+.icon-box span {
+  display: block;
+  width: 100px;
+}

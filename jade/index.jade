@@ -3,112 +3,14 @@ extends layouts/layout
 block content
     .scroll-container
         include includes/menu
-        div.row.header
-            span.header-title Guía de estilos
         div.row
             div.medium-col-12#estilos
                 h1 Estilos
+        include includes/colores
+        include includes/tipografias
+        include includes/iconos
         div.row
-            div.medium-col-12#colores
-                h2 Colores
-            div.medium-col-12
-                div.color-box.bg-maincolor
-                    span .(bg-)maincolor
-                div.color-box.bg-lightmaincolor
-                    span .(bg-)lightmaincolor
-                div.color-box.bg-darkmaincolor
-                    span .(bg-)darkmaincolor
-            div.medium-col-12
-                div.color-box.bg-secondcolor
-                    span .(bg-)secondcolor
-                div.color-box.bg-lightsecondcolor
-                    span .(bg-)lightsecondcolor
-                div.color-box.bg-darksecondcolor
-                    span .(bg-)darksecondcolor
-            div.medium-col-12
-                div.color-box.bg-thirdcolor
-                    span .(bg-)thirdcolor
-                div.color-box.bg-lightthirdcolor
-                    span .(bg-)lightthirdcolor
-                div.color-box.bg-darkthirdcolor
-                    span .(bg-)darkthirdcolor
-            div.medium-col-12
-                div.color-box.bg-black
-                    span .(bg-)black
-                div.color-box.bg-darkgrey
-                    span .(bg-)darkgrey
-                div.color-box.bg-grey
-                    span .(bg-)grey
-                div.color-box.bg-lightgrey
-                    span .(bg-)lightgrey
-                div.color-box.bg-white
-                    span .(bg-)white
-            div.medium-col-12
-                div.color-box.bg-alertcolor
-                    span .(bg-)alertcolor
-                div.color-box.bg-errorcolor
-                    span .(bg-)errorcolor
-                div.color-box.bg-infocolor
-                    span .(bg-)infocolor
-                div.color-box.bg-inverscolor
-                    span .(bg-)inverscolor
-                div.color-box.bg-successcolor
-                    span .(bg-)successcolor
-                div.color-box.bg-warningcolor
-                    span .(bg-)warningcolor
-        div.row
-            div.medium-col-12#tipografias
-                h2 Tipografías
-                p La fuente utilizada es Roboto importada directamente de fonts.googleapis.com con los siguientes posibles estilos:
-        div.row
-            div.small-col-12.medium-col-4
-                h3.light-text Roboto Light (.light-text)
-                small <i>Weight 300, letter-spacing 0.05em</i>
-                h3 Roboto Regular
-                small <i>Weight 400</i>
-                h3.medium-text Roboto Medium (.medium-text)
-                small <i>Weight 500</i>
-                h3.bold-text Roboto Bold (.bold-text)
-                small <i>Weight 700</i>
-            div.small-col-4.medium-col-4
-                h1.text-right h1.Titulo principal
-                h2.text-right h2.Titulo secundario
-                h3.text-right h3.Tercer nivel
-                h4.text-right h4.Cuarto nivel
-                h5.text-right h5.Quinto nivel
-                h6.text-right h6.Sexto nivel
-            div.small-col-4.medium-col-4
-                h1 34px
-                h2 24px
-                h3 20px
-                h4 18px
-                h5 16px
-                h6 14px
-        div.row
-            div.medium-col-6.clear
-                p
-                    |<u/>Párrafo normal</u>: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    |tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    |quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    |consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            div.medium-col-6
-                p.light-text
-                    |<u/>Párrafo light</u>: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    |tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    |quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    |consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            div.medium-col-6
-                p.medium-text
-                    |<u/>Párrafo medio</u>: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    |tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    |quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    |consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            div.medium-col-6
-                p.bold-text
-                    |<u/>Párrafo bold</u>: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    |tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    |quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    |consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        div.row
-            div.medium-col-12#icons
-                h2 Iconos
+            div.medium-col-12#componentes
+                h1 Componentes
+        include includes/botones
+

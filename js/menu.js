@@ -7,7 +7,7 @@
     $(document).on('ready',function(event){
         $('.hamburger-button').on('click',toggleSideMenu);
         $('.sidebar-alpha-layer').on('click',hideSideMenu);
-        $('.side-nav li>a').on('click',hideSideMenu);
+        $('.side-nav li>a').on('click',smoothScroll);
         $(window).on('resize',function(event){
             sidebarAlphaLayer.css('display','none');
             if($(window).width() > 768){
@@ -33,6 +33,16 @@
             sidebar.css('left','-100%');
             sidebarAlphaLayer.css('display','none');
         }
+    }
+
+    function smoothScroll(){
+        event.preventDefault();
+        href = $(event.currentTarget).attr('href');
+        if(href.startsWith("#")){
+            $('html,body').animate({scrollTop: $(href).offset().top}, 1000);
+        }
+        document.location=href;
+        return hideSideMenu();
     }
 
 }());
